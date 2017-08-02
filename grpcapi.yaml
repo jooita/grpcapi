@@ -1,0 +1,10 @@
+api-server:
+        dockerdir: ./api-server
+        env: env/api-server.env
+        grpcport: 50051
+
+api-client:
+        dockerdir: ./api-client
+        env: env/api-client.env
+        lang: go
+        command: "go run /go/src/go_fs/client.go"
